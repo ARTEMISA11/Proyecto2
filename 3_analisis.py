@@ -31,7 +31,7 @@ plt.savefig('grafica1.png', dpi=300)
 print("Gráfica 1 guardada.")
 
 # GRÁFICA 2: Diagrama Color-Magnitud
-consulta= "SELECT * FROM estrellas WHERE pmRA BETWEEN -5.0 AND -1.0 AND pmDE BETWEEN -9.0 AND -5.0"
+consulta= "SELECT * FROM estrellas WHERE pmRA BETWEEN -6.0 AND 0.0 AND pmDE BETWEEN -9.0 AND -5.0"
 df_omega = pd.read_sql_query(consulta, conexion)
 
 df_omega['Color_BP_RP'] = df_omega['BPmag'] - df_omega['RPmag']
@@ -43,6 +43,7 @@ plt.gca().invert_yaxis()
 plt.title('Diagrama HR de Omega Centauri')
 plt.xlabel(r'$B - R$')
 plt.ylabel(r'$G_{mag}$ ABS')
+plt.xlim(-1,3)
 plt.grid(True, linestyle='--', alpha=0.6)
 plt.savefig('grafica2.png', dpi=300)
 print("Gráfica 2 guardada.")
