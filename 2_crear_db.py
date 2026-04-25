@@ -16,6 +16,6 @@ conexion = sqlite3.connect('arqueologia.db')
 
 # 4. Transferir el DataFrame a una tabla SQL llamada 'estrellas'
 clean_df.to_sql('estrellas', conexion, if_exists='replace', index=False)
-echo " Datos migrados a Arqueologia.db en la tabla estrellas"
-conn.close()
+print("Datos migrados a Arqueologia.db en la tabla estrellas")
+conexion.close()
 print("Base de datos 'arqueologia.db' creada exitosamente.")
