@@ -21,4 +21,4 @@ echo "Paso 3: Generando análisis y gráficas..."
 python3 3_analisis.py
 
 echo "Proceso terminado exitosamente. Abriendo resultados..."
-open grafica1.jpg grafica2.jpg
+open grafica1.png grafica2.png
