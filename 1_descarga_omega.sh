@@ -13,3 +13,12 @@ TAP_URL="https://tapvizier.cds.unistra.fr/TAPVizieR/tap/sync?request=doQuery&lan
 wget -q -O  omega_bruto.csv "$TAP_URL$URL_QUERY"
 
 echo "Descarga completada: omega_bruto.csv" 
+
+echo "Paso 2: Limpiando datos y creando base de datos SQL..."
+python3 2_crear_db.py
+
+echo "Paso 3: Generando análisis y gráficas..."
+python3 3_analisis.py
+
+echo "Proceso terminado exitosamente. Abriendo resultados..."
+open grafica1.jpg grafica2.jpg

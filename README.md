@@ -21,6 +21,10 @@ Para aislar el cúmulo y eliminar la contaminación visual de nuestra galaxia, s
 	- pmRA entre -5.0 y -1.0 mas/yr
 	- pmDE entre -9.0 y -5.0 mas/yr
 
+
+![Movimiento Propio y Zoom](grafica1.png)
+
+
 Al aislar cinemáticamente las estrellas de Omega Centauri y graficar su índice de color ($B-R$) contra 
 su magnitud absoluta, dentificar claramente las etapas de evolución estelar:
 
@@ -32,4 +36,4 @@ su magnitud absoluta, dentificar claramente las etapas de evolución estelar:
 	- La Rama Horizontal: Son estrellas que ya alcanzaron la punta de la RGB, sufrieron flash de Helio
 			y ahora están quemando helio de manera estable en su núcleo.
 
-
+![Diagrama Color-Magnitud](grafica2.png)
